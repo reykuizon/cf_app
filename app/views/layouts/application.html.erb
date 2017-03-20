@@ -2,10 +2,13 @@
 <html>
   <head>
     <title>CfApp</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    "application", media: "all","data-turbolinks-track"=>true%>
-    <%= javascript_include_tag    "application","data-turbolinks-track"=>true%>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">       </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true%>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   </head>
 
   <body>
@@ -25,7 +28,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="http://localhost:3000/static_pages/index">Home</a></li>
+            <li><a href="http://localhost:3000/">Home</a></li>
             <li><a href="http://localhost:3000/static_pages/about">About</a></li> 
             <li><a href="http://localhost:3000/static_pages/contact">Contact</a></li>
           </ul>
@@ -36,8 +39,11 @@
     <%= yield %>
 
    <%#--- FOOTER ---%>
-  <footer>
+  <footer class="site_footer">
     &copy; 2015 Bike Berlin
   </footer> 
+
+
+
   </body>
 </html>
