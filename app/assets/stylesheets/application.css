@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+
+.navbar {
+  font-size: 1.1em;
+  text-decoration: red; 
+  
+}
+
+.navbar:active {
+  text-decoration: none;
+
+}
