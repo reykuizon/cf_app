@@ -47,3 +47,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# install pg gem and use it on the remote
+group :production do
+  gem 'pg'
+end
+
+# set the sqlite3 to only be use in local
+group :development, :test do
+  gem 'sqlite3'
+end
